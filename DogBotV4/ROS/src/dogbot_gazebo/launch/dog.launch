@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<!-- dog.launch -->  
+<!-- 2019 React Robotics Ltd -->  
+<!-- Nic Greenway, nic@reactrobotics.com -->  
+
+<!-- single dogbot in gazebo with controllers.  Intended to be called from other launch files -->  
+
+<launch>
+  <arg name="postgres_log" default="false" />
+  <arg name="model" default="$(find dogbot_description)/urdf/dogbot.xacro"/>
+  <arg name="paused" default="false"/>
+  
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
+
+  <!-- push robot_description to factory and spawn robot in gazebo -->
+  <node if="$(arg paused)" name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
+        args="-z 0.65 -urdf -model dogbot -param robot_description" respawn="false" output="screen" />
+
+  <node unless="$(arg paused)" name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
+        args="-z 0.65 -unpause -urdf -model dogbot -param robot_description" respawn="false" output="screen" />
+  
+  <!-- ros/Gazebo controllers -->
+  <include file="$(find dogbot_control)/launch/controllers.launch" />  
+
+<!--   
+  <include if="$(arg postgres_log)"  file="$(find dogbot_utilities)/launch/logger.launch">
+    <arg name="logging_config" value="sim_logging.yaml"/>
+  </include>
+  -->
+  <!--node pkg="dogbot_data" type="dogbot_data" name="dogbot_data" 
+output="screen"/-->
+
+ 
+</launch>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package>
+  <name>dogbot_gazebo</name>
+  <version>0.1.0</version>
+  <description>
+        Display and control of React Robotics' DogBot in Gazebo
+  </description>
+
+  <maintainer email="craftit@gmail.com">Charles Galambos</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">https://www.reactrobotics.com</url>
+  <url type="repository">https://github.com/ReactRobotics/DogBotV4</url>
+
+  <author email="craftit@gmail.com">Charles Galambos</author>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>dogbot_description</run_depend>
+  <run_depend>gazebo_ros_pkgs</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>gazebo_ros_control</run_depend>
+  <run_depend>ros_controllers</run_depend>
+  <run_depend>joint_state_controller</run_depend>
+  <run_depend>joint_trajectory_controller</run_depend>
+  <run_depend>effort_controllers</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>
