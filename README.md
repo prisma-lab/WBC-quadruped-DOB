@@ -29,3 +29,37 @@ The repository contains the following elements:
 }
 ```
 
+# Instructions
+
+The code was tested with Ubuntu 18.04, and ROS Melodic. Different OS and ROS versions are possible but not supported.
+
+### Install dependencies
+
+`sudo apt-get install ros-melodic-ros-control ros-melodic-ros-controllers`
+
+### Clone the following packages 
+
+```cd <CATKIN_WS_DIR>/src```
+
+`git clone https://github.com/prisma-lab/WBC_quadruped_DOB/tree/main/dogbot_controller`
+
+`git clone https://github.com/prisma-lab/WBC_quadruped_DOB/tree/main/DogBotV4`
+
+`git clone https://github.com/prisma-lab/WBC_quadruped_DOB/tree/main/force_plugin`
+
+
+### Compile 
+
+`catkin_make`
+
+### Run simulation
+Choose the case study inside force_plugin.cpp
+
+`roslaunch dogbot_gazebo gztest.launch paused:=true`
+
+`rosrun dogbot_controller dogbot /yourpath/<CATKIN_WS_sir>/src/DogbotV4/ROS/src/dogbot_description/urdf/dogbot.urdf`
+
+Press play in gazebo to start the simulation
+
+
+
