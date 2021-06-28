@@ -7,6 +7,7 @@ This software allows simulating the locomotion of a quadruped robot through a Wh
 
   [![Whole-body control with disturbance rejection through a momentum-based observer for quadruped robots](play_video_figure.png)](https://www.youtube.com/watch?v=styHnKxOot8)
 
+
 The combination of a motion planner for the trajectory of the robot’s center of mass, a momentum-based observer estimator, and an optimization problem based on the modulation of ground reaction forces allows the robot to reject external disturbances.
 
 The repository contains the following elements:
