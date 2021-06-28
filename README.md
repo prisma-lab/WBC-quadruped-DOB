@@ -17,3 +17,15 @@ The repository contains the following elements:
  * Some examples to test the proposed controller.
 
 
+### Citing
+```
+@article{MorlandoMAMT2021,
+  title={A Shared-control Teleoperation Architecture for Nonprehensile Object Transportation},
+  author={Morlando, Viviana and Teimoorzadeh, Ainoor and Ruggiero, Fabio },
+  journal={Mechanism and Machine Theory (in press)},
+  volume={164},
+  year={2021},
+  publisher={Elsevier}
+}
+```
+
