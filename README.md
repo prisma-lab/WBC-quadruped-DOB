@@ -20,7 +20,7 @@ The repository contains the following elements:
 ### Citing
 ```
 @article{MorlandoMAMT2021,
-  title={A Shared-control Teleoperation Architecture for Nonprehensile Object Transportation},
+  title={Whole-body Control with Disturbance Rejection through a Momentum-based Observer for Quadruped Robot},
   author={Morlando, Viviana and Teimoorzadeh, Ainoor and Ruggiero, Fabio },
   journal={Mechanism and Machine Theory (in press)},
   volume={164},
