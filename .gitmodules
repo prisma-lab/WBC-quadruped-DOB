@@ -1,0 +1,9 @@
+[submodule "DogBotV4"]
+	path = DogBotV4
+	url = https://github.com/Viviana-Morl/DogBotV4
+[submodule "dogbot_controller"]
+	path = dogbot_controller
+	url = https://github.com/Viviana-Morl/dogbot_controller
+[submodule "force_plugin"]
+	path = force_plugin
+	url = https://github.com/Viviana-Morl/force_plugin
